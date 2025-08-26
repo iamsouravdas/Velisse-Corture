@@ -1,0 +1,38 @@
+.logo {
+    width: 170px;
+}
+
+.appLayoutNavigationMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 23px;
+    margin-left: 150px;
+}
+
+.appLayoutNavigationMenu div {
+    font-family: 'Josefin Sans';
+    cursor: pointer;
+    color: #a79090;
+
+}
+
+.search-box {
+    height: 42px;
+    font-size: 12px;
+    width: 328px;
+    margin: 12px 21px 13px 13px;
+    border: 1px solid #e4e0e0;
+    border-radius: 44px;
+    padding: 16px;
+}
+
+.search-box:focus-visible {
+    border-color: red
+}
+
+.nav-icons {
+    color: #9e98a0;
+    font-size: 22px;
+}
