@@ -1,10 +1,8 @@
-import { Outlet } from 'react-router-dom'
-import { navigation } from '../../../data/app/navigation'
-import Navigation from '../../navigation/Navigation';
+import { Outlet } from 'react-router-dom';
 import logo from "../../../assets/logo.png";
+import { navigation, navTopRightNavigation } from '../../../data/app/navigation';
+import Navigation from '../../navigation/Navigation';
 import './layout.style.css';
-import { MdAccountCircle, MdShoppingCart } from 'react-icons/md';
-import { IoMdHeartEmpty } from 'react-icons/io';
 
 const Layout = () => {
     return (
@@ -12,25 +10,14 @@ const Layout = () => {
             <div className="d-flex justify-content-between">
                 {/* Start Header section */}
                 <img className="logo" src={logo} alt="logo" />
-
                 {/* Mid Header Section */}
                 <div>
                     <Navigation customClass='appLayoutNavigationMenu' data={navigation} />
                 </div>
-
                 {/* End Header section */}
-                <div className="d-flex">
-                    <input type="text" className="search-box" placeholder='Search for products brands and more' />
-                    <MdShoppingCart  className='mt-4 cursor-pointer nav-icons' />
-                    <IoMdHeartEmpty  className='mt-4 ms-2 cursor-pointer nav-icons' />
-                    <MdAccountCircle  className='mt-4 ms-2 me-4 cursor-pointer nav-icons' />
-                </div>
-
-
+                    <Navigation customClass='d-flex' data = {navTopRightNavigation} />
                 {/* Naviation Bar */}
             </div>
-            
-
             <Outlet />
         </>
     )

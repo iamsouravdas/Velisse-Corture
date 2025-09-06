@@ -1,42 +1,65 @@
 .banner {
     width: 100%;
-    height: 84vh;
+    height: 90vh;
     object-fit: cover;
     display: block;
-    filter: grayscale(0.3);
+    filter: grayscale(0.5);
 }
+
 .home-banner-container {
     position: relative;
 }
+
 .banner-caption-container {
     position: absolute;
-    top: 272px;
+    top: 32%;
     left: 77px;
     color: white;
-    font-family: 'Questrial';    
+    font-family: 'Questrial';
 }
-.banner-caption-container {
-    position: absolute;
-    top: 272px;
-    left: 77px;
-    color: white;
-    font-family: 'Questrial';    
-}
+
 .font-elegant {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 52px;
 }
+
 .font-modern {
-    font-family: 'Playfair Display', sans-serif;
-     font-size: 70px;
-     font-weight: 500;
+    font-family: sans-serif;
+    font-size: 70px;
+    font-weight: 500;
 }
-.shop-now{
+
+.shop-now {
     border: white;
     width: auto;
-    padding: 0 18px;
+    padding: 0 26px;
     height: 42px;
     border-radius: 23px;
-    background: #ffe4cb;
+    background: #ffc690;
     font-weight: 500;
+}
+
+.bannerVideo {
+    position: relative;
+}
+
+.video-banner-text {
+    position: absolute;
+    top: 29em;
+    left: 14em;
+}
+
+.video-banner-text>p {
+    color: rgb(255, 255, 255);
+}
+
+.caption-head {
+
+    font-size: 5rem;
+    font-family: 'Questrial';
+}
+
+.caption-body {
+    font-size: 2rem;
+    text-align: center;
 }
